@@ -1,5 +1,6 @@
 package com.cydeo.step_definitions;
 
+import com.cydeo.utilities.BrowserUtils;
 import com.cydeo.utilities.Driver;
 import io.cucumber.java.After;
 import io.cucumber.java.Before;
@@ -11,7 +12,7 @@ public class Hooks {  // in this class we will be able to create "pre" and "post
 
   @Before   // import @Before coming from io.cucumber.java
 public  void setup(){
-     System.out.println("----> @Before running beforeeach SCENARIOS");
+System.out.println("----> @setUp before each SCENARIOS");
 }
 
 
@@ -25,7 +26,8 @@ public  void setup(){
          scenario.attach(screenshot, "image/png", scenario.getName());
          }
          System.out.println("---->@After running after each SCENARIOS");
-         Driver.closeDriver();// it wil open me the browser wich i am  using
+             BrowserUtils.sleep(3);
+             Driver.closeDriver();// it wil open me the browser wich i am  using
    }
 
 
