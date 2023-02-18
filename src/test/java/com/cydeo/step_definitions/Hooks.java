@@ -25,6 +25,11 @@ System.out.println("----> @setUp before each SCENARIOS");
          byte[] screenshot = ((TakesScreenshot) Driver.getDriver()).getScreenshotAs(OutputType.BYTES);
          scenario.attach(screenshot, "image/png", scenario.getName());
          }
+
+
+
+
+
          System.out.println("---->@After running after each SCENARIOS");
              BrowserUtils.sleep(3);
              Driver.closeDriver();// it wil open me the browser wich i am  using
