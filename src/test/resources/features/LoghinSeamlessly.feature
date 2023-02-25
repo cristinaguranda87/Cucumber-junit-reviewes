@@ -1,6 +1,6 @@
 Feature: Login Functionality tests
 
-
+@validLogin
   Scenario: Login with valid credentials
     Given the user on the log in page
     When the user enter valid username
@@ -8,7 +8,7 @@ Feature: Login Functionality tests
     And the user clicks the log in button
     Then the user should be able to log in
 
-
+  @validLoginWithParametres
   Scenario: Login with valid credentials
     Given the user on the log in page
     When the user enter valid username "Employee61"
