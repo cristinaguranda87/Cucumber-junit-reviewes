@@ -12,6 +12,7 @@ import org.junit.runner.RunWith;
 plugin = {"html:target/cucumber-reports.html",        //  to create reports
            "rerun:target/rerun.txt",
            "me.jvt.cucumber.report.PrettyReports:target/cucumber"  }, // to run Maven Cucumber Reporting },
+
 features = "src/test/resources/features",         // right click on feature and copy path from content root
 glue = "com/cydeo/step_definitions",             // in order to define our step definitions:right click on step_definitiona copy path  from source root
 dryRun = false,                                 // in order to get snippets
