@@ -11,26 +11,26 @@ import java.util.List;
 public class ButtonsPages {
 
     public ButtonsPages() {
-PageFactory.initElements(Driver.getDriver(),this);
+        PageFactory.initElements(Driver.getDriver(), this);
     }
 
-        @FindBy(xpath = "//*[@id='doubleClickBtn']")
-        public WebElement doubleClickMe;
+    @FindBy(xpath = "//*[@id='doubleClickBtn']")
+    public WebElement doubleClickMe;
 
-        @FindBy(css = "button[id='rightClickBtn']")
-        public WebElement rightClickMe;
+    @FindBy(css = "button[id='rightClickBtn']")
+    public WebElement rightClickMe;
 
-        @FindBy(xpath = "//*[.='Click Me']")
-        public WebElement clickMe;
+    @FindBy(xpath = "//button[.='Click Me']")
+    public WebElement clickMe;
 
-        @FindBy(xpath = "//*[@id='doubleClickMessage']")
-        public WebElement doubleClickMessageYouHave;
+    @FindBy(xpath = "//*[@id='doubleClickMessage']")
+    public WebElement doubleClickMessageYouHave;
 
-        @FindBy(xpath = "//*[@id='rightClickMessage']")
-        public WebElement rightClickMessageYouHave;
+    @FindBy(xpath = "//*[@id='rightClickMessage']")
+    public WebElement rightClickMessageYouHave;
 
     @FindBy(xpath = "//*[@id='dynamicClickMessage']")
     public WebElement dynamicClickMessageYouHave;
 
-    }
 
+}

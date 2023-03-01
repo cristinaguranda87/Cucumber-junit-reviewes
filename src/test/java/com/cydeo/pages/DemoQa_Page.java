@@ -10,15 +10,23 @@ import org.openqa.selenium.support.PageFactory;
 public class DemoQa_Page {
 
 // we add the constructor only when we use @Find
-    public void clickOption(String option) {
-        String locator = "//li[.='" + option + "']";
-        BrowserUtils.sleep(2);
-        Driver.getDriver().findElement(By.xpath(locator)).click();
+
+    public class ElementsPage {
+        /*
+        if you use @FindBy anottaion in order to add one element we have to use constructor
+         */
+        public ElementsPage() {
+            PageFactory.initElements(Driver.getDriver(), this);
+        }
+
+        public void clickOption(String option) {
+            String locator = "//li[.='" + option + "']";
+            BrowserUtils.sleep(1);
+            Driver.getDriver().findElement(By.xpath(locator)).click();
+        }
     }
+
 }
-
-
-
 
 
 
