@@ -2,8 +2,9 @@
 Feature:Librarian User Adding Feature
   As a librarian, I should be able to add new user into library
 
-
+   @wip
  Scenario: Verify added user able to login libraryApp
+
     Given the "librarian" on the home page
     And the librarian navigates to "Users" page
     When the librarian clicks to Add User
