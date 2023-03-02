@@ -2,7 +2,7 @@ Feature: Elements page functionality
 
   @buttons
   Scenario: Check different button actions
-    Given Navigate to "Buttons" page
+    Given Navigate to "Butt" page
     When  Double click on button
     Then  Verify text double click message "You have done a double click" should be visible
     And   Right click on button

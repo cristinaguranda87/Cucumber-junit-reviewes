@@ -15,8 +15,8 @@ public class DemoQA_StepDefinitions {
     Actions actions = new Actions(Driver.getDriver());
     @Given("Navigate to {string} page")
     public void navigate_to_page(String option) {
-        Driver.getDriver().get(ConfigurationReader.getProperty("demo.qa.url"));
-
+        Driver.getDriver().get(ConfigurationReader.getProperty("demoQAURL"));
+       elementsPage.clickOption(option);
     }
 
     @When("Double click on button")

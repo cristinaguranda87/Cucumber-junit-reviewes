@@ -11,11 +11,11 @@ public class DemoQa_Page {
 
 // we add the constructor only when we use @Find
 
-    public class ElementsPage {
+
         /*
         if you use @FindBy anottaion in order to add one element we have to use constructor
          */
-        public ElementsPage() {
+        public DemoQa_Page() {
             PageFactory.initElements(Driver.getDriver(), this);
         }
 
@@ -26,7 +26,7 @@ public class DemoQa_Page {
         }
     }
 
-}
+
 
 
 
